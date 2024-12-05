@@ -26,7 +26,28 @@ public class HomePage extends PageObject {
             .located(By.xpath("//button[text()='Sign up']"));
 
     //  LOG IN
-
     public static final Target BTN_LOGIN = Target.the("Boton para iniciar sesion")
             .located(By.id("login2"));
+    public static final Target INP_LOGIN_USERNAME = Target.the("Campo de usuario para login")
+            .located(By.id("loginusername"));
+    public static final Target INP_LOGIN_PASSWORD = Target.the("Campo de contraseña para login")
+            .located(By.id("loginpassword"));
+    public static final Target BTN_LOGIN_SUBMIT = Target.the("Boton para enviar login")
+            .located(By.xpath("//button[text()='Log in']"));
+
+    // Welcome message
+    public static final Target TXT_WELCOME = Target.the("Mensaje de bienvenida")
+            .located(By.id("nameofuser"));
+
+    // Categories
+    public static final Target LINK_PHONES = Target.the("Enlace a categoría Phones")
+            .located(By.linkText("Phones"));
+
+    // Product
+    public static final Target LINK_SAMSUNG_GALAXY_S6 = Target.the("Enlace al producto Samsung galaxy s6")
+            .located(By.linkText("Samsung galaxy s6"));
+
+    // Add to cart
+    public static final Target BTN_ADD_TO_CART = Target.the("Botón Agregar al carrito")
+            .located(By.linkText("Add to cart"));
 }

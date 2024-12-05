@@ -10,7 +10,7 @@ Feature: Registrar un usuario
 
     Examples:
       | username    | password |
-      | usuarioqwer | pass123  |
+      | Cielomayor | password  |
 
 
   @RegistrarUsuario2 @HappyPath
